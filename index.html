@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mrecosoft Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #ff9900;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #cc7a00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mrecosoft Products</h1>
+    <p>High-quality cleaning solutions available on Amazon</p>
+  </header>
+
+  <div class="container">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="lemon.jpg" alt="5L Lemon Floor Cleaner">
+      <h3>5L Lemon Floor Cleaner</h3>
+      <a href="https://amzn.in/d/a725a5A" class="btn" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="rose.jpg" alt="5L Rose Floor Cleaner">
+      <h3>5L Rose Floor Cleaner</h3>
+      <a href="https://amzn.in/d/8hzqnTt" class="btn" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="toilet.jpg" alt="5L Toilet Cleaner">
+      <h3>5L Toilet Cleaner</h3>
+      <a href="https://amzn.in/d/ifGKGVL" class="btn" target="_blank">Buy on Amazon</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="lemon-glass.jpg" alt="5L Lemon Floor Cleaner + Glass Cleaner Free">
+      <h3>5L Lemon Floor Cleaner + Free Glass Cleaner (500ml)</h3>
+      <p>Available soon</p>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="rose.jpg" alt="5L Rose Floor Cleaner + Glass Cleaner Free">
+      <h3>5L Rose Floor Cleaner + Free Glass Cleaner (500ml)</h3>
+      <p>Available soon</p>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <img src="combo.jpg" alt="5L Rose + 5L Lemon Combo">
+      <h3>5L Rose + 5L Lemon Combo</h3>
+      <p>Available soon</p>
+    </div>
+  </div>
+</body>
+</html>
