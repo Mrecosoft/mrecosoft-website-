@@ -4,121 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. EcoSoft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        header img {
+            max-width: 200px;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .buy-btn:hover {
+            background: #218838;
+        }
+        section {
+            text-align: center;
+            padding: 30px;
+            background: #f8f8f8;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+
     <!-- Header / Logo -->
-    <header style="text-align:center; padding: 20px;">
-        <img src="logo.jpg" alt="Mr. EcoSoft Logo" style="max-width:200px;">
+    <header>
+        <img src="logo.jpg" alt="Mr. EcoSoft Logo">
         <h1>Welcome to Mr. EcoSoft</h1>
         <p>Eco-friendly Cleaning Solutions</p>
     </header>
 
-    <!-- Products will go here -->
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mrecosoft Products</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-    }
-    header {
-      background: #0077cc;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .product {
-      background: white;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-    .product h3 {
-      margin: 10px 0;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #ff9900;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background: #cc7a00;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Mrecosoft Products</h1>
-    <p>High-quality cleaning solutions available on Amazon</p>
-  </header>
+    <!-- Products -->
+    <main>
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="lemon.jpg" alt="5L Lemon Floor Cleaner">
+            <h3>5L Lemon Floor Cleaner</h3>
+            <p>Fresh lemon fragrance for sparkling clean floors.</p>
+            <a href="https://amzn.in/d/a725a5A" target="_blank" class="buy-btn">Buy on Amazon</a>
+        </div>
 
-  <div class="container">
-    <!-- Product 1 -->
-    <div class="product">
-      <img src="lemon.jpg" alt="5L Lemon Floor Cleaner">
-      <h3>5L Lemon Floor Cleaner</h3>
-      <a href="https://amzn.in/d/a725a5A" class="btn" target="_blank">Buy on Amazon</a>
-    </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="rose.jpg" alt="5L Rose Floor Cleaner">
+            <h3>5L Rose Floor Cleaner</h3>
+            <p>Pleasant rose fragrance for everyday cleaning.</p>
+            <a href="https://amzn.in/d/8hzqnTt" target="_blank" class="buy-btn">Buy on Amazon</a>
+        </div>
 
-    <!-- Product 2 -->
-    <div class="product">
-      <img src="rose.jpg" alt="5L Rose Floor Cleaner">
-      <h3>5L Rose Floor Cleaner</h3>
-      <a href="https://amzn.in/d/8hzqnTt" class="btn" target="_blank">Buy on Amazon</a>
-    </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="toilet.jpg" alt="5L Toilet Cleaner">
+            <h3>5L Toilet Cleaner</h3>
+            <p>Powerful formula for tough stains and hygiene.</p>
+            <a href="https://amzn.in/d/ifGKGVL" target="_blank" class="buy-btn">Buy on Amazon</a>
+        </div>
 
-    <!-- Product 3 -->
-    <div class="product">
-      <img src="toilet.jpg" alt="5L Toilet Cleaner">
-      <h3>5L Toilet Cleaner</h3>
-      <a href="https://amzn.in/d/ifGKGVL" class="btn" target="_blank">Buy on Amazon</a>
-    </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="lemon-glass.jpg" alt="5L Lemon Floor Cleaner + Free Glass Cleaner">
+            <h3>5L Lemon Floor Cleaner + Free Glass Cleaner 500ml</h3>
+            <p>Get sparkling floors and a bonus glass cleaner.</p>
+        </div>
 
-    <!-- Product 4 -->
-    <div class="product">
-      <img src="lemon-glass.jpg" alt="5L Lemon Floor Cleaner + Glass Cleaner Free">
-      <h3>5L Lemon Floor Cleaner + Free Glass Cleaner (500ml)</h3>
-      <p>Available soon</p>
-    </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="rose-glass.jpg" alt="5L Rose Floor Cleaner + Free Glass Cleaner">
+            <h3>5L Rose Floor Cleaner + Free Glass Cleaner 500ml</h3>
+            <p>Fragrant floor cleaner with a free glass cleaner.</p>
+        </div>
 
-    <!-- Product 5 -->
-    <div class="product">
-      <img src="rose.jpg" alt="5L Rose Floor Cleaner + Glass Cleaner Free">
-      <h3>5L Rose Floor Cleaner + Free Glass Cleaner (500ml)</h3>
-      <p>Available soon</p>
-    </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="combo.jpg" alt="5L Rose + 5L Lemon Floor Cleaner Combo">
+            <h3>Combo Pack – 5L Rose & 5L Lemon Floor Cleaner</h3>
+            <p>Best value pack for everyday freshness.</p>
+        </div>
+    </main>
 
-    <!-- Product 6 -->
-    <div class="product">
-      <img src="combo.jpg" alt="5L Rose + 5L Lemon Combo">
-      <h3>5L Rose + 5L Lemon Combo</h3>
-      <p>Available soon</p>
-    </div>
-  </div>
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <p>📞 Phone: <a href="tel:7400059889">7400059889</a></p>
+        <p>📧 Email: <a href="mailto:mrecosoft@gmail.com">mrecosoft@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mr. EcoSoft. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
